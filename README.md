@@ -1,27 +1,48 @@
-# KeepHealth
+<div align="center">
+  <img src="https://github.com/vb-ferreira/fmt-keep-health/blob/main/img/logo-fmt.png?sanitize=true" width="110" height="110"/>
+</div>
+<hr>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+# [M1S09] Keep Health App
 
-## Development server
+Criar uma aplicação web, utilizando **Angular**, onde os usuários poderão inserir informações pessoais de saúde e seuas atividades físicas que realizam ao longo da semana.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tarefas
 
-## Code scaffolding
+### [📌 Criação do projeto](https://trello.com/c/qZ2wRUuo) | source code: [`Ex1`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/Ex1) 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Crie um novo projeto Angular para o projeto Keep Health. :heavy_check_mark:
 
-## Build
+### [📌 Estruturação dos componentes iniciais](https://trello.com/c/Iq9Swz0l) | source code: [`Ex2`]() 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Crie uma pasta **shared** e uma subpasta **components** onde serão criados os componentes **header** e **sidebar**. 
 
-## Running unit tests
+- Crie as seguintes páginas na pasta **app**: **login**, **home** e **cadastro**.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 📌 [Criação da tela de login - Parte 1](https://trello.com/c/ace8U05o) | source code: [`Ex3`]()
 
-## Running end-to-end tests
+- Neste exercício vamos criar a tela de login que irá conter: 1) Um input para o email do usuário; 2) Um input para a senha; 3) Um botão "Entrar"; 4) Um botão "Esqueci a senha"; Um botão ou link (à sua escolha) para "Cadastrar-me".
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 📌 [Criação da tela de login - Parte 2](https://trello.com/c/TFnO7zQp) | source code: [`Ex4`]()
 
-## Further help
+- Crie um objeto na `localStorage` que irá conter os usuários cadastrados em sistema (usuário e senha).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Quando o usuário clicar em "Entrar" será validado se o usuário está cadastrado (comparando o email e senha com os dados da `localStorage`).
+
+- Caso o usuário esteja cadastrado, redirecionar para a "home"; senão, exibir um alerta dizendo "Usuário ou senha inválidos".
+
+- Caso o usuário clique no botão "Esqueci a senha" a senha do usuário será alterada para a senha padrão "a1b2c4d4" e o usuário será avisado para prosseguir utilizando essa senha.
+
+- Caso o usuário clique no botão/link "Cadastrar-me", ele será redirecionado para a tela de cadastro.
+
+### 📌 [Criação da tela de cadastro](https://trello.com/c/DRqG4rTJ) | source code: [`Ex5`]()
+
+- Crie os inputs "Nome", "Email", "Data Nascimento", "Senha" e "Confirmar Senha".
+
+- Crie o botão "Cadastrar", que deve validar a senha e armazenar email e senha no `localStorage`.
+
+- Crie o botão "Voltar", que deve redirecionar para a tela de login.
+
+# Demonstração
+
+Veja uma **demo** da aplicação [aqui](). 
