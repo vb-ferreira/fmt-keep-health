@@ -13,11 +13,11 @@ Criar uma aplicação web, utilizando **Angular**, onde os usuários poderão in
 
 - Crie um novo projeto Angular para o projeto Keep Health. :heavy_check_mark:
 
-### [📌 Estruturação dos componentes iniciais](https://trello.com/c/Iq9Swz0l) | source code: [`Ex2`]() 
+### [📌 Estruturação dos componentes iniciais](https://trello.com/c/Iq9Swz0l) | source code: [`Ex2`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/Ex2) 
 
-- Crie uma pasta **shared** e uma subpasta **components** onde serão criados os componentes **header** e **sidebar**. 
+- Crie uma pasta **shared** e uma subpasta **components** onde serão criados os componentes **header** e **sidebar**. :heavy_check_mark: 
 
-- Crie as seguintes páginas na pasta **app**: **login**, **home** e **cadastro**.
+- Crie as seguintes páginas na pasta **app**: **login**, **home** e **cadastro**. :heavy_check_mark:
 
 ### 📌 [Criação da tela de login - Parte 1](https://trello.com/c/ace8U05o) | source code: [`Ex3`]()
 
