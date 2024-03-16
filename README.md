@@ -5,7 +5,7 @@
 
 # [M1S09] Keep Health App
 
-Criar uma aplicação web, utilizando **Angular**, onde os usuários poderão inserir informações pessoais de saúde e seuas atividades físicas que realizam ao longo da semana.
+Criar uma aplicação web, utilizando **Angular**, onde os usuários poderão inserir informações pessoais de saúde e as atividades físicas que realizam ao longo da semana.
 
 ## Tarefas
 
@@ -19,9 +19,9 @@ Criar uma aplicação web, utilizando **Angular**, onde os usuários poderão in
 
 - Crie as seguintes páginas na pasta **app**: **login**, **home** e **cadastro**. :heavy_check_mark:
 
-### 📌 [Criação da tela de login - Parte 1](https://trello.com/c/ace8U05o) | source code: [`Ex3`]()
+### 📌 [Criação da tela de login - Parte 1](https://trello.com/c/ace8U05o) | source code: [`Ex3`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/Ex3)
 
-- Neste exercício vamos criar a tela de login que irá conter: 1) Um input para o email do usuário; 2) Um input para a senha; 3) Um botão "Entrar"; 4) Um botão "Esqueci a senha"; Um botão ou link (à sua escolha) para "Cadastrar-me".
+- Neste exercício vamos criar a tela de login que irá conter: 1) Um input para o email do usuário; 2) Um input para a senha; 3) Um botão "Entrar"; 4) Um botão "Esqueci a senha"; Um botão ou link (à sua escolha) para "Cadastrar-me". :heavy_check_mark:
 
 ### 📌 [Criação da tela de login - Parte 2](https://trello.com/c/TFnO7zQp) | source code: [`Ex4`]()
 
