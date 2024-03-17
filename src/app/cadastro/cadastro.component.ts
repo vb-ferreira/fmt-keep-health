@@ -23,10 +23,11 @@ export class CadastroComponent {
 
   onSignUp() {
     // Validação
-    const hasEmpty = !Object.values(this.cadastroModel).some(x => x !== null && x !== '');
-    if (hasEmpty || (this.cadastroModel.password != this.confirmPassword)) {
-      alert('Todos os campos precisam ser preenchidos corretamente.');
-      return;
+    const hasEmpty = !Object.values(this.cadastroModel).every(x => x !== null && x !== '');
+    if (hasEmpty) {
+      return alert('Todos os campos precisam ser preenchidos.');
+    } else if (this.cadastroModel.password != this.confirmPassword) {
+      return alert('As senhas não coincidem.');
     }
 
     const localUser = localStorage.getItem('keepHealthUsers');

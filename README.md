@@ -23,25 +23,25 @@ Criar uma aplicação web, utilizando **Angular**, onde os usuários poderão in
 
 - Neste exercício vamos criar a tela de login que irá conter: 1) Um input para o email do usuário; 2) Um input para a senha; 3) Um botão "Entrar"; 4) Um botão "Esqueci a senha"; Um botão ou link (à sua escolha) para "Cadastrar-me". :heavy_check_mark:
 
-### 📌 [Criação da tela de login - Parte 2](https://trello.com/c/TFnO7zQp) | source code: [`Ex4`]()
+### 📌 [Criação da tela de login - Parte 2](https://trello.com/c/TFnO7zQp) | source code: [`Ex4-Ex5`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/Ex4-Ex5)
 
-- Crie um objeto na `localStorage` que irá conter os usuários cadastrados em sistema (usuário e senha).
+- Crie um objeto na `localStorage` que irá conter os usuários cadastrados em sistema (usuário e senha). :heavy_check_mark:
 
-- Quando o usuário clicar em "Entrar" será validado se o usuário está cadastrado (comparando o email e senha com os dados da `localStorage`).
+- Quando o usuário clicar em "Entrar" será validado se o usuário está cadastrado (comparando o email e senha com os dados da `localStorage`). :heavy_check_mark:
 
-- Caso o usuário esteja cadastrado, redirecionar para a "home"; senão, exibir um alerta dizendo "Usuário ou senha inválidos".
+- Caso o usuário esteja cadastrado, redirecionar para a "home"; senão, exibir um alerta dizendo "Usuário ou senha inválidos". :heavy_check_mark:
 
-- Caso o usuário clique no botão "Esqueci a senha" a senha do usuário será alterada para a senha padrão "a1b2c4d4" e o usuário será avisado para prosseguir utilizando essa senha.
+- Caso o usuário clique no botão "Esqueci a senha" a senha do usuário será alterada para a senha padrão "a1b2c4d4" e o usuário será avisado para prosseguir utilizando essa senha. :heavy_check_mark:
 
-- Caso o usuário clique no botão/link "Cadastrar-me", ele será redirecionado para a tela de cadastro.
+- Caso o usuário clique no botão/link "Cadastrar-me", ele será redirecionado para a tela de cadastro. :heavy_check_mark:
 
-### 📌 [Criação da tela de cadastro](https://trello.com/c/DRqG4rTJ) | source code: [`Ex5`]()
+### 📌 [Criação da tela de cadastro](https://trello.com/c/DRqG4rTJ) | source code: [`Ex4-Ex5`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/Ex4-Ex5)
 
-- Crie os inputs "Nome", "Email", "Data Nascimento", "Senha" e "Confirmar Senha".
+- Crie os inputs "Nome", "Email", "Data Nascimento", "Senha" e "Confirmar Senha". :heavy_check_mark:
 
-- Crie o botão "Cadastrar", que deve validar a senha e armazenar email e senha no `localStorage`.
+- Crie o botão "Cadastrar", que deve validar a senha e armazenar email e senha no `localStorage`. :heavy_check_mark:
 
-- Crie o botão "Voltar", que deve redirecionar para a tela de login.
+- Crie o botão "Voltar", que deve redirecionar para a tela de login. :heavy_check_mark:
 
 # Demonstração
 
