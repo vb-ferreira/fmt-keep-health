@@ -22,6 +22,13 @@ export class CadastroComponent {
   constructor(private router: Router){};
 
   onSignUp() {
+    // Validação
+    const hasEmpty = !Object.values(this.cadastroModel).some(x => x !== null && x !== '');
+    if (hasEmpty || (this.cadastroModel.password != this.confirmPassword)) {
+      alert('Todos os campos precisam ser preenchidos corretamente.');
+      return;
+    }
+
     const localUser = localStorage.getItem('keepHealthUsers');
 
     if (localUser != null) {

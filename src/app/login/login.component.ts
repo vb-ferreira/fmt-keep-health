@@ -35,6 +35,20 @@ export class LoginComponent {
   }
 
   onRemember() {
-    
+    const localUsers = localStorage.getItem('keepHealthUsers');
+    if (localUsers != null) {
+      const users = JSON.parse(localUsers);
+      const actualUser = users.find(
+        (user: { email: string }) => user.email === this.loginModel.email
+        );
+      if (actualUser != undefined) {
+        // localStorage.setItem('loggedUser', JSON.stringify(actualUser));
+        // this.router.navigateByUrl('/home');
+        actualUser.password = 'a1b2c4d4';
+        console.log(actualUser.password);
+      } else {
+        alert('Usuário não encontrado.');
+      }
+    }
   }
 }
