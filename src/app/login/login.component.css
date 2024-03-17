@@ -44,11 +44,5 @@
 }
 
 .login-card button:hover {
-  background-color: #4caf5099;
-  color: black;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 10px;
+  background-color: #504caf;
 }
