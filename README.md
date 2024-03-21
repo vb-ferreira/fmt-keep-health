@@ -43,6 +43,16 @@ Criar uma aplicação web, utilizando **Angular**, onde os usuários poderão in
 
 - Crie o botão "Voltar", que deve redirecionar para a tela de login. :heavy_check_mark:
 
+# [M1S10] Keep Health App (continuação)
+
+## Tarefas
+
+### [📌 Menu de navegação](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S10-Ex1`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S10-Ex1)
+
+- Crie um menu de navegação dentro do componente `sidebar` com as opções "Início", "Dietas" e "Perfil".
+
+- Crie no `localStorage` um array de alimentos.
+
 # Demonstração
 
 Veja uma **demo** da aplicação [aqui](https://fmt-keep-health.vercel.app/). 
