@@ -1,15 +1,35 @@
 :host {
   font-family: "Arial", sans-serif;
   background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.container-header {
+  /* Debug */
+  border: 2px solid red;
+
+  grid-column: span 2;
+}
+
+.container-sidebar {
+  /* Debug */
+  border: 2px solid red;
+
+  min-height: 100svh;
+}
+
+.container-main {
+  width: 100%;
+  max-width: 400px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0 auto;
-}
-
-.container {
-  width: 100%;
-  max-width: 400px;
 }
 
