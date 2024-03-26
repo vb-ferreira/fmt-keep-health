@@ -53,6 +53,12 @@ Criar uma aplicação web, utilizando **Angular**, onde os usuários poderão in
 
 - Crie no `localStorage` um array de alimentos. :heavy_check_mark:
 
+### [📌 Novos componentes](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S10-Ex2`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S10-Ex2)
+
+- Crie os componentes "diet", "diet-detail" e "profile". :heavy_check_mark:
+
+- Atualize o `app.routes.ts` para que cada rota leve ao respectivo componente. :heavy_check_mark:
+
 # Demonstração
 
 Veja uma **demo** da aplicação [aqui](https://fmt-keep-health.vercel.app/). 
