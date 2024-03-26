@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { CommonModule, Location } from '@angular/common';
+import { BrowserStorageService } from './services/browser-storage.service';
 
 @Component({
   selector: 'app-root',
@@ -13,10 +14,14 @@ import { CommonModule, Location } from '@angular/common';
 })
 export class AppComponent {
 
+  // Fix localStorage
+  browserStorageService: BrowserStorageService;  
   // Captura a url atual
   currentPath: string;
-  constructor(private location: Location) {
+  
+  constructor(private location: Location, browserStorageService: BrowserStorageService) {
     this.currentPath = this.location.path();
+    this.browserStorageService = browserStorageService;
   }
 
   // Local data
@@ -203,9 +208,10 @@ export class AppComponent {
         imageLink: 'https://via.placeholder.com/150x150',
       },
     ];
-    const diets = localStorage.getItem('diets');
+
+    const diets = this.browserStorageService.get('diets');
     if (diets == null) {
-      localStorage.setItem('diets', JSON.stringify(dietsData));
+      this.browserStorageService.set('diets', JSON.stringify(dietsData));
     }
   }
 }
