@@ -1,0 +1,13 @@
+#header {
+  padding: 0;
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #e43f5a;
+} 
+
+#header p {
+  padding: 0;
+  margin: 0;
+  display: block;
+} 

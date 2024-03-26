@@ -1,24 +1,26 @@
 :host {
   font-family: "Arial", sans-serif;
   background-color: #f2f2f2;
+  
   margin: 0;
   padding: 0;
 
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr minmax(max-content, max-content);
 }
 
 .container-header {
-  /* Debug */
-  border: 2px solid red;
-
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 10px 0 10px 1rem;
+  box-shadow: 0px 5px 25px #ccc;
   grid-column: span 2;
 }
 
 .container-sidebar {
-  /* Debug */
-  border: 2px solid red;
-
+  /* border: 2px solid red; */
   min-height: 100svh;
 }
 
@@ -32,4 +34,6 @@
   height: 100vh;
   margin: 0 auto;
 }
+
+/* TESTES */
 
