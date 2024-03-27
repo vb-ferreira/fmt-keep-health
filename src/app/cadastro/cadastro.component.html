@@ -1,21 +1,31 @@
-<div class="wrapper">
+<div class="wrapper"> 
   <div class="cadastro-card">
     <h2>Cadastro</h2>
     <form name="cadastroForm">
       <label for="userName">Nome:</label>
-      <input type="text" id="userName" name="userName" [(ngModel)]="cadastroModel.nome" required>
+      <input type="text" id="userName" name="userName" [(ngModel)]="cadastroModel.nome">
   
       <label for="userEmail">Email:</label>
-      <input type="email" id="userEmail" name="userEmail" [(ngModel)]="cadastroModel.email" required>
+      <input type="email" id="userEmail" name="userEmail" [(ngModel)]="cadastroModel.email">
   
       <label for="userNascimento">Data de nascimento:</label>
-      <input type="date" id="userNascimento" name="userNascimento" [(ngModel)]="cadastroModel.dataNascimento" required>
+      <input type="date" id="userNascimento" name="userNascimento" [(ngModel)]="cadastroModel.dataNascimento">
+      
+      <div class="bloco">
+        <label for="userAltura">Altura (cm):</label>
+        <input type="number" id="userAltura" name="userAltura" [(ngModel)]="cadastroModel.altura" step="10" min="100">
   
-      <label for="userPassword">Senha:</label>
-      <input type="password" id="userPassword" name="userPassword" [(ngModel)]="cadastroModel.password" required>
-  
-      <label for="userPasswordConfirm">Confirmar senha:</label>
-      <input type="password" id="userPasswordConfirm" name="userPasswordConfirm" [(ngModel)]="confirmPassword" required>
+        <label for="userPeso">Peso (kg):</label>
+        <input type="number" id="userPeso" name="userPeso" [(ngModel)]="cadastroModel.peso" min="30">
+      </div>
+
+      <div class="bloco">
+        <label for="userPassword">Senha:</label>
+        <input type="password" id="userPassword" name="userPassword" [(ngModel)]="cadastroModel.password">
+    
+        <label for="userPasswordConfirm">Confirmar senha:</label>
+        <input type="password" id="userPasswordConfirm" name="userPasswordConfirm" [(ngModel)]="confirmPassword">
+      </div>
   
       <button type="submit" (click)="onSignUp()">Cadastrar</button>
       <button routerLink="/login">Voltar</button>

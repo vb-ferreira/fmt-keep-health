@@ -1,1 +1,19 @@
-<p>profile works!</p>
+<div class="wrapper"> 
+  <div class="profile-card">
+    <h2>Perfil</h2>
+    <div class="profile-data">
+      <p><strong>Nome:</strong>  {{ loggedUser.nome }}</p>
+      <p><strong>Email:</strong>  {{ loggedUser.email }}</p>
+      <p><strong>Nascimento:</strong>  {{ loggedUser.dataNascimento }}</p>
+      <p><strong>Altura:</strong>  {{ (loggedUser.altura  | toMeters) + ' m' }}</p>
+      <p><strong>Peso:</strong>  {{ loggedUser.peso  + ' kg'}}</p>
+    </div>
+    <h3>Consultar Endereço</h3>
+    <div class="bloco">
+      <label for="userCEP"><strong>CEP:</strong></label>
+      <input type="text" id="userCEP" name="userCEP">
+  
+      <button>Consultar</button>
+    </div>
+    </div>
+</div>

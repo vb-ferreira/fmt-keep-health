@@ -14,6 +14,8 @@ export class CadastroComponent {
     nome: '',
     email: '',
     dataNascimento: '',
+    altura: '',
+    peso: '',
     password: ''
   }
 

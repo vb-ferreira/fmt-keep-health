@@ -59,6 +59,12 @@ Criar uma aplicação web, utilizando **Angular**, onde os usuários poderão in
 
 - Atualize o `app.routes.ts` para que cada rota leve ao respectivo componente. :heavy_check_mark:
 
+### [📌 Construção do perfil](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S10-Ex3`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S10-Ex3)
+
+- Acrescente informações do usuário (peso, altura, etc) para exibir no perfil. :heavy_check_mark:
+
+- Crie um `pipe` para converter a altura de centímetros para metros. :heavy_check_mark:
+
 # Demonstração
 
 Veja uma **demo** da aplicação [aqui](https://fmt-keep-health.vercel.app/). 
