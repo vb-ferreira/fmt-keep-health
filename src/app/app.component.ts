@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Router } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { CommonModule, Location } from '@angular/common';
@@ -14,15 +14,17 @@ import { BrowserStorageService } from './services/browser-storage.service';
 })
 export class AppComponent {
 
-  // Fix localStorage
+  // To fix localStorage bug
   browserStorageService: BrowserStorageService;  
-  // Captura a url atual
-  currentPath: string;
   
-  constructor(private location: Location, browserStorageService: BrowserStorageService) {
-    this.currentPath = this.location.path();
+  constructor(private router: Router, browserStorageService: BrowserStorageService) {
     this.browserStorageService = browserStorageService;
   }
+
+  get isAuthPage(): boolean {
+    const authPages = ['/login', '/cadastro', '/'];
+    return authPages.includes(this.router.url);
+  }  
 
   // Local data
   ngOnInit() {
@@ -34,7 +36,7 @@ export class AppComponent {
           ' Rica em frutas, legumes, verduras, cereais integrais e azeite de oliva.',
         qttCalories: 1800,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 2,
@@ -43,7 +45,7 @@ export class AppComponent {
           ' Exclui carnes vermelhas, mas permite peixes, ovos e laticínios.',
         qttCalories: 1500,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 3,
@@ -52,7 +54,7 @@ export class AppComponent {
           'Rica em gorduras, com baixo teor de carboidratos e moderada em proteínas. Ideal para perda de peso e controle da glicemia.',
         qttCalories: 2000,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 4,
@@ -61,7 +63,7 @@ export class AppComponent {
           'Reduz o consumo de carboidratos, focando em proteínas e gorduras saudáveis. Boa para perda de peso e controle do apetite.',
         qttCalories: 1600,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 5,
@@ -70,7 +72,7 @@ export class AppComponent {
           'Cicla períodos de jejum com períodos de alimentação normal. Promove perda de peso, saúde metabólica e autofagia.',
         qttCalories: 'Variável',
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 6,
@@ -79,7 +81,7 @@ export class AppComponent {
           'Predominantemente vegetariana, mas permite consumo ocasional de carne. Ideal para quem busca reduzir o consumo de carne sem abandoná-la totalmente.',
         qttCalories: 1800,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 7,
@@ -88,7 +90,7 @@ export class AppComponent {
           'Exclui todos os produtos de origem animal. Rica em frutas, legumes, verduras, grãos integrais e leguminosas.',
         qttCalories: 1800,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 8,
@@ -97,7 +99,7 @@ export class AppComponent {
           'Reduz a pressão arterial e o risco de doenças cardíacas. Rica em frutas, legumes, verduras, grãos integrais e laticínios com baixo teor de gordura.',
         qttCalories: 2000,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 9,
@@ -106,7 +108,7 @@ export class AppComponent {
           'Exclui carne vermelha e aves, mas permite ovos e laticínios. Ideal para quem busca uma dieta vegetariana rica em proteínas.',
         qttCalories: 1700,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 10,
@@ -115,7 +117,7 @@ export class AppComponent {
           'Exclui o glúten, proteína presente no trigo, centeio e cevada. Boa para pessoas com doença celíaca ou sensibilidade ao glúten.',
         qttCalories: 1800,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 11,
@@ -124,7 +126,7 @@ export class AppComponent {
           'Exclui a lactose, açúcar presente no leite e seus derivados. Boa para pessoas com intolerância à lactose.',
         qttCalories: 1700,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 12,
@@ -133,7 +135,7 @@ export class AppComponent {
           'Baseada na ideia de que o pH do sangue influencia na saúde. Prioriza alimentos alcalinos e evita alimentos acidificantes. Inclui frutas, legumes, verduras, grãos integrais e leguminosas.',
         qttCalories: 1900,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 13,
@@ -142,7 +144,7 @@ export class AppComponent {
           'Visa eliminar toxinas do corpo. Rica em frutas, legumes, verduras, água e chás.',
         qttCalories: 1500,
         qttDaysFeed: 3 - 5,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 14,
@@ -151,7 +153,7 @@ export class AppComponent {
           'Reduz a inflamação no corpo, o que pode ajudar a prevenir e tratar doenças crônicas. Rica em frutas, legumes, verduras, grãos integrais e gorduras saudáveis.',
         qttCalories: 1800,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 15,
@@ -160,7 +162,7 @@ export class AppComponent {
           'Rica em proteínas e calorias para ajudar a construir músculos. Inclui carne vermelha, frango, peixe, ovos, laticínios, leguminosas e grãos integrais.',
         qttCalories: 2500 - 3000,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 16,
@@ -169,7 +171,7 @@ export class AppComponent {
           'Rica em proteínas e com baixo teor de gordura para ajudar a definir os músculos. Inclui carne vermelha magra, frango, peixe, ovos, laticínios, leguminosas e grãos integrais.',
         qttCalories: 2000 - 2500,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 17,
@@ -178,7 +180,7 @@ export class AppComponent {
           'Rica em nutrientes para suprir as necessidades da mãe e do bebê. Inclui frutas, legumes, verduras, grãos integrais, proteínas magras e laticínios.',
         qttCalories: 1800 - 2200,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 18,
@@ -187,7 +189,7 @@ export class AppComponent {
           'Rica em nutrientes para ajudar a manter a saúde e prevenir doenças. Inclui frutas, legumes, verduras, grãos integrais, proteínas magras e laticínios.',
         qttCalories: 1500 - 1800,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 19,
@@ -196,7 +198,7 @@ export class AppComponent {
           'Controla os níveis de açúcar no sangue. Rica em fibras, proteínas magras e gorduras saudáveis. Limita o consumo de carboidratos simples e açúcares.',
         qttCalories: 1800 - 2000,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
       {
         id: 20,
@@ -205,7 +207,7 @@ export class AppComponent {
           ' Baseada em alimentos consumidos pelos nossos ancestrais caçadores-coletores.',
         qttCalories: 2200,
         qttDaysFeed: 7,
-        imageLink: 'https://via.placeholder.com/150x150',
+        imageLink: 'https://via.placeholder.com/200x200',
       },
     ];
 

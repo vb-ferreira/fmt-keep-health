@@ -7,6 +7,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ToMetersPipe implements PipeTransform {
 
   transform(value: number | undefined): unknown {
-    return value ? value/100 : 0;
+    return (value ? value/100 : 0).toFixed(2);
   }
 }

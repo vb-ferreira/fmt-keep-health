@@ -1,0 +1,15 @@
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+
+  display: flex;
+  justify-content: center ;
+  /* diff */
+  align-items: start;  
+  padding-top: 75px;
+  
+  height: 100vh;
+  margin: 0 auto;
+
+  color: #333;
+}

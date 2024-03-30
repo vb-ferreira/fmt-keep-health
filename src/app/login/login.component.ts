@@ -35,7 +35,7 @@ export class LoginComponent {
         );
       if (actualUser != undefined) {
         localStorage.setItem('loggedUser', JSON.stringify(actualUser));
-        this.router.navigateByUrl('home');
+        this.router.navigateByUrl('/home');
       } else {
         alert('Usuário ou senha inválidos.');
       }

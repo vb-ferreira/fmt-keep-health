@@ -65,6 +65,14 @@ Criar uma aplicação web, utilizando **Angular**, onde os usuários poderão in
 
 - Crie um `pipe` para converter a altura de centímetros para metros. :heavy_check_mark:
 
+### [📌 Exibição das dietas](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S10-Ex4`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S10-Ex4)
+
+- Exibir mensgaem de boas-vindas na `home`. :heavy_check_mark:
+
+- Exibir lista de dietas. :heavy_check_mark:
+
+- Atualizar rota para `diet-detail`. :heavy_check_mark:
+
 # Demonstração
 
 Veja uma **demo** da aplicação [aqui](https://fmt-keep-health.vercel.app/). 

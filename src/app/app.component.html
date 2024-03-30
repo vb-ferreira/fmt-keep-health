@@ -1,9 +1,11 @@
-<div class="container-header" *ngIf="currentPath != '/login' && currentPath != '/cadastro' && currentPath != ''">
+<div class="container-header" *ngIf="!isAuthPage">
   <app-header></app-header>
 </div>
+
 <div class="container-main">
   <router-outlet></router-outlet>
 </div>
-<div class="container-sidebar" *ngIf="currentPath != '/login' && currentPath != '/cadastro' && currentPath != ''">
+
+<div class="container-sidebar"  *ngIf="!isAuthPage">
   <app-sidebar></app-sidebar>
 </div>

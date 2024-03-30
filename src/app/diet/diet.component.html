@@ -1,1 +1,15 @@
-<p>diet works!</p>
+<div class="diet-search">
+  <input type="text">
+  <button>Pesquisar</button>
+</div>
+<div class="wrapper">
+  <div class="diet-card" *ngFor="let diet of diets">
+    <img src="{{ diet.imageLink }}" alt="{{ diet.name }}">
+    <h2>{{ diet.name }}</h2>
+    <div class="diet-data">
+      <p><strong>Descrição:</strong>  {{ diet.description }}</p>
+    </div>
+    <button routerLink="/cadastro">Detalhes</button>
+  </div>
+</div>  
+

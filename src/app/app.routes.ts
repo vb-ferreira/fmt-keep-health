@@ -3,7 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DietComponent } from './diet/diet.component';
-import { DietDetailComponent } from './diet-detail/diet-detail.component';
+import { DietDetailComponent } from './diet/diet-detail/diet-detail.component';
 import { ProfileComponent } from './profile/profile.component';
 
 export const routes: Routes = [
@@ -25,11 +25,10 @@ export const routes: Routes = [
   },
   {
     path: 'diet',
-    component: DietComponent
-  },
-  {
-    path: 'diet-detail',
-    component: DietDetailComponent
+    children: [
+      { path: '', component: DietComponent },
+      { path: ':id', component: DietDetailComponent },
+    ]
   },
   {
     path: 'profile',
