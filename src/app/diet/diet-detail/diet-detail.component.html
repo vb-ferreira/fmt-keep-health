@@ -1,1 +1,11 @@
-<p>diet-detail works!</p>
+<div class="wrapper"> 
+  <div class="details-card">
+    <h2>{{ selected.name }}</h2>
+    <div class="details-data">
+      <p><strong>Descrição:</strong>  {{ selected.description }}</p>
+      <p><strong>Calorias:</strong>  {{ selected.qttCalories }}</p>
+      <p><strong>Número de dias:</strong>  {{ selected.qttDaysFeed }}</p>
+      <button (click)="goBack()">Voltar</button>
+    </div>
+  </div>
+</div> 

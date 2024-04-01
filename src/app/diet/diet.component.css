@@ -9,7 +9,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
-}
+} 
 
 .diet-card {
   border: 1px solid #ccc;
@@ -17,12 +17,12 @@
   padding: 15px;
   color: #333;
   height: 100%;
-  /* display: grid; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
+  /* max-width: 400px */
 }
 
 .diet-card img {
@@ -78,13 +78,14 @@ button:hover {
 }
 
 .diet-search input {
-  padding: 0;
+  padding: 5px;
   margin: 0;
   height: 35px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  width: 100%; 
+  /* width: 100%;  */
+  width: 600px;
 }
 
 .diet-search button {
