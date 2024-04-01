@@ -77,7 +77,9 @@ Criar uma aplicação web, utilizando **Angular**, onde os usuários poderão in
 
 - Crie um evento de clique para redirecionar para a tela de detalhamento da dieta. :heavy_check_mark:
 
+### [📌 CEP Service](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S10-Ex6`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S10-Ex6)
 
+- Crie um `service` com um método para recuperar o endereço a partir do CEP. :heavy_check_mark:
 
 # Demonstração
 
