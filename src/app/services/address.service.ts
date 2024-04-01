@@ -10,7 +10,7 @@ export class AddressService {
   constructor(private httpClient: HttpClient) { }
 
   getAddress(cep: any): Observable<any> {
-    const url = "http://viacep.com.br/"
+    const url = "https://viacep.com.br/"
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     return this.httpClient.get(url + `ws/${cep}/json/`, { headers });
   }
