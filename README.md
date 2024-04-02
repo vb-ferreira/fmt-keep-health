@@ -81,6 +81,12 @@ Criar uma aplicação web, utilizando **Angular**, onde os usuários poderão in
 
 - Crie um `service` com um método para recuperar o endereço a partir do CEP. :heavy_check_mark:
 
+### [📌 Consulta CEP](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S10-Ex7`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S10-Ex7)
+
+- Implemente a consulta do CEP usando a API do [viacep](https://viacep.com.br/). :heavy_check_mark:
+
+- Exiba os dados do CEP consultado. :heavy_check_mark:
+
 # Demonstração
 
 Veja uma **demo** da aplicação [aqui](https://fmt-keep-health.vercel.app/). 
