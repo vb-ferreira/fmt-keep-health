@@ -11,10 +11,17 @@
     <h3>Consultar Endereço</h3>
     <div class="bloco">
       <label for="userCEP"><strong>CEP:</strong></label>
-      <input type="text" id="userCEP" name="userCEP">
+      <input type="text" [(ngModel)]="inputCep">
   
       <button type="button" (click)="searchCEP()">Consultar</button>
     </div>
-    <p>{{ address }}</p>
+    @if (hasAddress) {
+      <div>
+        <p><strong>Logradouro:</strong> {{ address.logradouro }}</p>
+        <p><strong>Complemento:</strong> {{ address.complemento }}</p>
+        <p><strong>Bairro:</strong> {{ address.bairro }}</p>
+        <p><strong>Cidade/UF:</strong> {{ address.localidade }}/{{ address.uf }}</p>
+      </div>
+    }
   </div>
 </div> 
