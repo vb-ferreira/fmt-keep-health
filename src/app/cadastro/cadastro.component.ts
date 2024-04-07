@@ -7,7 +7,7 @@ import { Router, RouterLink } from '@angular/router';
   standalone: true,
   imports: [FormsModule, RouterLink],
   templateUrl: './cadastro.component.html',
-  styleUrl: './cadastro.component.css'
+  styleUrl: './cadastro.component.scss'
 })
 export class CadastroComponent {
   cadastroModel = {

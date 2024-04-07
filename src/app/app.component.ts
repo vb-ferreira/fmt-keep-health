@@ -9,7 +9,7 @@ import { BrowserStorageService } from './services/browser-storage.service';
   standalone: true,
   imports: [RouterOutlet, SharedModule, CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
 

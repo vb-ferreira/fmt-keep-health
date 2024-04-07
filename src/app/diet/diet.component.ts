@@ -9,7 +9,7 @@ import { RouterLink, Router } from '@angular/router';
   standalone: true,
   imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './diet.component.html',
-  styleUrl: './diet.component.css'
+  styleUrl: './diet.component.scss'
 })
 export class DietComponent {
   browserStorageService: BrowserStorageService;

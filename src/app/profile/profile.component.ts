@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, ToMetersPipe, FormsModule],
   templateUrl: './profile.component.html',
-  styleUrl: './profile.component.css'
+  styleUrl: './profile.component.scss'
 })
 export class ProfileComponent {
   // Fix localStorage

@@ -8,7 +8,7 @@ import { BrowserStorageService } from '../../services/browser-storage.service';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './diet-detail.component.html', 
-  styleUrl: './diet-detail.component.css'
+  styleUrl: './diet-detail.component.scss'
 })
 export class DietDetailComponent {
   browserStorageService: BrowserStorageService;

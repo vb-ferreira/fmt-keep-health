@@ -93,9 +93,13 @@ Os exercícios desta semana estão voltados para os conceitos de: **Módulos**, 
 
 ## Tarefas
 
-### [📌 Menu de navegação](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S11-Ex1`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S11-Ex1)
+### [📌 Modularização](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S11-Ex1`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S11-Ex1)
 
 - Modularize os componentes da pasta `shared`. :heavy_check_mark:
+
+### [📌 Estilização](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S11-Ex2`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S11-Ex2)
+
+- Configure o projeto para trabalhar com **SCSS**. :heavy_check_mark:
 
 # Demonstração
 
