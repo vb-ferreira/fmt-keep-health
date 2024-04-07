@@ -101,6 +101,10 @@ Os exercícios desta semana estão voltados para os conceitos de: **Módulos**, 
 
 - Configure o projeto para trabalhar com **SCSS**. :heavy_check_mark:
 
+### [📌 Responsividade](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S11-Ex3`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S11-Ex3)
+
+- Utilize media queries para deixar a `home` responsiva. :heavy_check_mark:
+
 # Demonstração
 
 Veja uma **demo** da aplicação [aqui](https://fmt-keep-health.vercel.app/). 

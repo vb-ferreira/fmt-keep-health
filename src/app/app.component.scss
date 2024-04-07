@@ -10,7 +10,6 @@
 }
 
 .container-header {
-  /* border: 2px solid red; */
   display: flex;
   align-items: center;
   height: 60px;
@@ -20,13 +19,44 @@
 }
 
 .container-sidebar {
-  border: 2px solid red;
   min-height: 100svh;
 }
 
 .container-main {
-  /* Usar o Grid? */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+// Media queries
+@media (max-width: 1024px) {   
+  :host {     
+    display: flex;     
+    flex-direction: column;
+  }
+  
+  .container-header {
+    order: 1;
+    justify-content: center;
+    box-shadow: none;
+    background-color: white;
+    padding: 10px 0px;
+  }
+
+  .container-sidebar {
+    order: 2;
+    display: flex;
+    min-height: min-content;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container-main {
+    order: 3;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    background-color: white;
+  }
 }
