@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
-import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +13,7 @@ export class LoginComponent {
   loginModel = {
     email: '',
     password: ''
-  }
+  } 
 
   constructor(private router: Router) {}
 

@@ -93,17 +93,31 @@ Os exercícios desta semana estão voltados para os conceitos de: **Módulos**, 
 
 ## Tarefas
 
-### [📌 Modularização](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S11-Ex1`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S11-Ex1)
+### [📌 Modularização](https://trello.com/c/s4Jg5U6K) | source code: [`M1S11-Ex1`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S11-Ex1)
 
 - Modularize os componentes da pasta `shared`. :heavy_check_mark:
 
-### [📌 Estilização](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S11-Ex2`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S11-Ex2)
+### [📌 Estilização](https://trello.com/c/n4CKMYA3) | source code: [`M1S11-Ex2`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S11-Ex2)
 
 - Configure o projeto para trabalhar com **SCSS**. :heavy_check_mark:
 
-### [📌 Responsividade](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S11-Ex3`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S11-Ex3)
+### [📌 Responsividade](https://trello.com/c/oa6r12MM) | source code: [`M1S11-Ex3`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S11-Ex3)
 
 - Utilize media queries para deixar a `home` responsiva. :heavy_check_mark:
+
+### [📌 Validação de formulário](https://trello.com/c/phmdsZ7F) | source code: [`M1S11-Ex4`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S11-Ex4)
+
+- Inclua a validação de campos obrigatórios (required), juntamente com as labels para feedback visual em cada input no componente **profile**. :heavy_check_mark:
+
+# [M1S12] Keep Health App (continuação)
+
+Guardas de rota, otimização, build e deploy.
+
+## Tarefas
+
+### [📌 Guarda de Rota I](https://trello.com/c/dbBSAihj) | source code: [`M1S12-Ex1`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S12-Ex1)
+
+- Crie um guarda de rota do tipo `CanActivate` na pasta `shared`. A ideia é que apenas as rotas `home`, `diet` e `profile` possuam esse guarda. :heavy_check_mark:
 
 # Demonstração
 
