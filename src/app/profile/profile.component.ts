@@ -3,23 +3,25 @@ import { CommonModule} from '@angular/common';
 import { BrowserStorageService } from '../services/browser-storage.service';
 import { AddressService } from '../services/address.service';
 import { ToMetersPipe } from '../pipes/to-meters.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [CommonModule, ToMetersPipe, FormsModule],
+  imports: [CommonModule, ToMetersPipe, FormsModule, ReactiveFormsModule],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.scss'
 })
 export class ProfileComponent {
-  // Fix localStorage
   browserStorageService: BrowserStorageService;
   userString: string = '';
   loggedUser: any;
   address: any;
-  inputCep: string = '';
   hasAddress: boolean = false;
+
+  form = new FormGroup({
+    userCEP: new FormControl('', [Validators.minLength(8), Validators.maxLength(8), Validators.required])
+  });
   
   constructor(browserStorageService: BrowserStorageService, private addressService: AddressService) {
     this.browserStorageService = browserStorageService;
@@ -30,9 +32,8 @@ export class ProfileComponent {
     this.loggedUser = JSON.parse(this.userString);
   }
 
-  // TODO: capturar o CEP do template?
   searchCEP() {
-    this.addressService.getAddress(this.inputCep).subscribe(
+    this.addressService.getAddress(this.form.value.userCEP).subscribe(
       {
         next: (response) => {
           this.address = response;

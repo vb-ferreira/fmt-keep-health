@@ -1,7 +1,7 @@
 <div class="wrapper"> 
   <div class="profile-card">
     <h2>Perfil</h2>
-    <div class="profile-data">
+    <div class="profile-data"> 
       <p><strong>Nome:</strong>  {{ loggedUser.nome }}</p>
       <p><strong>Email:</strong>  {{ loggedUser.email }}</p>
       <p><strong>Nascimento:</strong>  {{ loggedUser.dataNascimento }}</p>
@@ -9,18 +9,29 @@
       <p><strong>Peso:</strong>  {{ loggedUser.peso  + ' kg'}}</p>
     </div>
     <h3>Consultar Endereço</h3>
-    <div class="bloco">
+    <!-- <div class="bloco">
       <label for="userCEP"><strong>CEP:</strong></label>
       <input type="text" [(ngModel)]="inputCep">
   
       <button type="button" (click)="searchCEP()">Consultar</button>
-    </div>
-    @if (hasAddress) {
+    </div> -->
+    <form class="bloco" (ngSubmit)="searchCEP()" [formGroup]="form">
+      <label for="userCEP"><strong>CEP:</strong></label>
+      <input type="text" name="userCEP" formControlName="userCEP">
+  
+      <button type="submit" [disabled]="!form.valid">Consultar</button>
+    </form>
+    @if (hasAddress && address.logradouro) {
       <div>
         <p><strong>Logradouro:</strong> {{ address.logradouro }}</p>
         <p><strong>Complemento:</strong> {{ address.complemento }}</p>
         <p><strong>Bairro:</strong> {{ address.bairro }}</p>
         <p><strong>Cidade/UF:</strong> {{ address.localidade }}/{{ address.uf }}</p>
+      </div>
+    }
+    @if (hasAddress && !address.logradouro) {
+      <div class="error">
+        <p><strong>Endereço não localizado. Verifique o CEP informado.</strong></p>
       </div>
     }
   </div>
