@@ -115,9 +115,15 @@ Guardas de rota, otimização, build e deploy.
 
 ## Tarefas
 
-### [📌 Guarda de Rota I](https://trello.com/c/dbBSAihj) | source code: [`M1S12-Ex1`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S12-Ex1)
+### [📌 Guarda de Rota](https://trello.com/c/dbBSAihj) | source code: [`M1S12-Ex1`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S12-Ex1)
 
 - Crie um guarda de rota do tipo `CanActivate` na pasta `shared`. A ideia é que apenas as rotas `home`, `diet` e `profile` possuam esse guarda. :heavy_check_mark:
+
+### [📌 Guarda de Rota](https://trello.com/c/QYCmDptX) & [📌 Lazy Loading](https://trello.com/c/Q8qUpUEb)| source code: [`M1S12-Ex2-Ex3`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S12-Ex1-Ex3)
+
+- Crie um guarda de rota do tipo `ActivateChild` para a rota filha do módulo `diet`. :heavy_check_mark:
+
+- Utilizando o conceito de lazy loading, crie um módulo de rotas separado para as rota do `diet` e, através da importação `loadChildren`, adicione esse módulo no arquivo `app.routes.ts`. :heavy_check_mark:
 
 # Demonstração
 

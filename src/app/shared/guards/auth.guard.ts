@@ -1,11 +1,13 @@
 
 import { CanActivateFn, Router } from '@angular/router';
 import { inject } from '@angular/core';
+import { BrowserStorageService } from '../../services/browser-storage.service';
 
 export const authGuard: CanActivateFn = (route, state) => {
-  const router = inject(Router); 
+  const router = inject(Router);
+  const browserStorageService = inject(BrowserStorageService); 
 
-  const hasUser = !!localStorage.getItem('loggedUser');
+  const hasUser = !!browserStorageService.get('loggedUser');
 
   if (hasUser) {
     return true;

@@ -3,9 +3,9 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DietComponent } from './diet/diet.component';
-import { DietDetailComponent } from './diet/diet-detail/diet-detail.component';
 import { ProfileComponent } from './profile/profile.component';
 import { authGuard } from './shared/guards/auth.guard';
+import { detailsGuard } from './shared/guards/details.guard';
 
 export const routes: Routes = [
   {
@@ -27,12 +27,14 @@ export const routes: Routes = [
     component: CadastroComponent
   },
   {
+    path: "diet",
+    component: DietComponent,
+    canActivate: [authGuard],
+  },
+  {
     path: 'diet',
-    children: [
-      { path: '', component: DietComponent },
-      { path: ':id', component: DietDetailComponent },
-    ],
-    canActivate: [authGuard]
+    canActivateChild: [detailsGuard],
+    loadChildren: () => import('./diet/diet.module').then(m => m.DietModule)
   },
   {
     path: 'profile',
