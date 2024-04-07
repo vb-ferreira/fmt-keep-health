@@ -1,20 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet, Router } from '@angular/router';
-import { HeaderComponent } from './shared/header/header.component';
-import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { SharedModule } from './shared/shared.module';
 import { CommonModule, Location } from '@angular/common';
 import { BrowserStorageService } from './services/browser-storage.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, SidebarComponent, CommonModule],
+  imports: [RouterOutlet, SharedModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
 
-  // To fix localStorage bug
   browserStorageService: BrowserStorageService;  
   
   constructor(private router: Router, browserStorageService: BrowserStorageService) {

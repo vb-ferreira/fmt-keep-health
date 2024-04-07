@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../shared/header/header.component';
-import { SidebarComponent } from '../shared/sidebar/sidebar.component';
 import { BrowserStorageService } from '../services/browser-storage.service';
+import { SharedModule } from '../shared/shared.module';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, SidebarComponent],
+  imports: [SharedModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

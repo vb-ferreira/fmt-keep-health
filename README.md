@@ -87,6 +87,16 @@ Criar uma aplicação web, utilizando **Angular**, onde os usuários poderão in
 
 - Exiba os dados do CEP consultado. :heavy_check_mark:
 
+# [M1S11] Keep Health App (continuação)
+
+Os exercícios desta semana estão voltados para os conceitos de: **Módulos**, **Estilização** (SASS, Responsividade e bibliotecas externas) e **Validação de Formulários**.
+
+## Tarefas
+
+### [📌 Menu de navegação](https://docs.google.com/document/d/1YlWsxrtAeE_lHIrlMS7Lyc_lEo1vDYne40hnEoUMkPw/edit) | source code: [`M1S11-Ex1`](https://github.com/vb-ferreira/fmt-keep-health/releases/tag/M1S11-Ex1)
+
+- Modularize os componentes da pasta `shared`. :heavy_check_mark:
+
 # Demonstração
 
 Veja uma **demo** da aplicação [aqui](https://fmt-keep-health.vercel.app/). 
