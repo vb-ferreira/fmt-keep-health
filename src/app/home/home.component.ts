@@ -29,7 +29,6 @@ export class HomeComponent {
     data: '',
   }
   
-  
   ngOnInit() {
     this.loggedUser = this.browserStorageService.get('loggedUser');
     this.loggedUser = JSON.parse(this.loggedUser);
@@ -37,12 +36,18 @@ export class HomeComponent {
     this.atividades = JSON.parse(this.atividades);
   
     this.activities = [
-      { title: 'Corrida', url: 'url1' },
-      { title: 'Natação', url: 'url2' },
+      { title: 'Corrida', url: 'https://www.freepik.com/icon/running_763965#fromView=search&page=1&position=3&uuid=21cac139-98b9-43ea-8fe9-bc5a9b0907fa' },
+      { title: 'Futebol', url: 'url2https://www.freepik.com/icon/football_94183#fromView=search&page=1&position=5&uuid=21cac139-98b9-43ea-8fe9-bc5a9b0907fa' },
+      { title: 'Vôlei', url: 'https://www.freepik.com/icon/volleyball_7349793#fromView=search&page=3&position=6&uuid=21cac139-98b9-43ea-8fe9-bc5a9b0907fa' }
     ];
   }
 
   onRegister() {
+    // Validação
+    const hasEmpty = !Object.values(this.atividadeModel).every(x => x !== null && x !== '');
+    if (hasEmpty) {
+      return alert('Todos os campos precisam ser preenchidos.');
+    }
 
     const actLocal = localStorage.getItem('atividades');
 
