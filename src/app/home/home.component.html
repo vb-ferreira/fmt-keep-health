@@ -1,3 +1,13 @@
-<div class="wrapper">
+<!-- <div class="wrapper">
   <h1>Bem-vindo, {{ loggedUser.nome ? loggedUser.nome.split(' ')[0] : 'Visitante' }}!</h1> 
+  <p-button label="Cadastrar"></p-button>
+</div> -->
+
+<div class="card flex justify-content-center align-items-start">
+  <p-button (click)="showDialog()" label="Adicinar atividade"></p-button>
+  <p-dialog header="Nova atividade" [(visible)]="visible" [modal]="true" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
+      <p class="m-0">
+        form aqui
+      </p>
+  </p-dialog>
 </div>
