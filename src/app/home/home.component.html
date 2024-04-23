@@ -6,8 +6,30 @@
 <div class="card flex justify-content-center align-items-start">
   <p-button (click)="showDialog()" label="Adicinar atividade"></p-button>
   <p-dialog header="Nova atividade" [(visible)]="visible" [modal]="true" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
-      <p class="m-0">
-        form aqui
-      </p>
+      
+        <form name="atividadeForm" class="flex-row">
+          
+          <div class="card flex justify-content-center">
+            <p-dropdown 
+            [options]="activities"
+            [(ngModel)]="atividadeModel.act" 
+            optionLabel="title" 
+            [showClear]="true" 
+            name="name"
+            placeholder="Selecione"></p-dropdown>
+          </div>
+          
+          <div class="card flex justify-content-center">
+            <span class="p-float-label">
+                <input type="date" pInputText name="data" id="data" [(ngModel)]="atividadeModel.data" />
+            </span>
+          </div>
+
+          <div class="card flex justify-content-center">
+            <p-button type="submit" (click)="onRegister()" size="small">Registrar</p-button>
+          </div>
+                 
+        </form>
+      
   </p-dialog>
 </div>

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 
-@Component({
+@Component({ 
   selector: 'app-cadastro',
   standalone: true,
   imports: [FormsModule, RouterLink],
