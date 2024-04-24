@@ -1,0 +1,32 @@
+<!-- @if (cards.length > 0) {
+  @for (card of cards; track cards) {
+    <div>
+      <img src="{{ card.act.url }}" alt="">
+      <p>{{ card.act.title }}</p>
+      <p>{{ card.data }}</p>
+    </div>
+  }
+} -->
+
+<p-dataView #dv [value]="cards" [layout]="'grid'" emptyMessage="Nenhuma atividade cadastrada">
+  <ng-template let-card pTemplate="grid" let-cards>
+      <div class="grid grid-nogutter">
+          <div class="col-12 md:col-6" *ngFor="let card of cards; let first = first">
+              <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4" [ngClass]="{ 'border-top-1 surface-border': !first }">
+                  <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" src="{{ card.act.url }}" />
+                  <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
+                      <div class="flex flex-column align-items-center sm:align-items-start gap-3">
+                          <div class="text-2xl font-bold text-900">{{ card.act.title }}</div>
+                          <div class="flex align-items-center gap-3">
+                              <span class="flex align-items-center gap-2">
+                                  <i class="pi pi-tag"></i>
+                                  <span class="font-semibold">{{ card.data }}</span>
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </ng-template>
+</p-dataView>

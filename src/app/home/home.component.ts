@@ -6,11 +6,12 @@ import { ButtonModule } from 'primeng/button';
 import { DialogModule } from 'primeng/dialog';
 import { InputTextModule } from 'primeng/inputtext';
 import { DropdownModule } from 'primeng/dropdown';
+import { CardsComponent } from './cards/cards.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule, SharedModule, ButtonModule, DialogModule, InputTextModule, DropdownModule],
+  imports: [FormsModule, SharedModule, ButtonModule, DialogModule, InputTextModule, DropdownModule, CardsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -36,9 +37,9 @@ export class HomeComponent {
     this.atividades = JSON.parse(this.atividades);
   
     this.activities = [
-      { title: 'Corrida', url: 'https://www.freepik.com/icon/running_763965#fromView=search&page=1&position=3&uuid=21cac139-98b9-43ea-8fe9-bc5a9b0907fa' },
-      { title: 'Futebol', url: 'url2https://www.freepik.com/icon/football_94183#fromView=search&page=1&position=5&uuid=21cac139-98b9-43ea-8fe9-bc5a9b0907fa' },
-      { title: 'Vôlei', url: 'https://www.freepik.com/icon/volleyball_7349793#fromView=search&page=3&position=6&uuid=21cac139-98b9-43ea-8fe9-bc5a9b0907fa' }
+      { title: 'Corrida', url: 'assets/running.png' },
+      { title: 'Futebol', url: 'assets/soccer.png' },
+      { title: 'Vôlei', url: 'assets/volei.png' }
     ];
   }
 
@@ -62,6 +63,7 @@ export class HomeComponent {
     }
     
     alert('Atividade cadastrada com sucesso.');
+    window.location.reload();
 
   }
   

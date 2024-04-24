@@ -1,10 +1,18 @@
-<!-- <div class="wrapper">
-  <h1>Bem-vindo, {{ loggedUser.nome ? loggedUser.nome.split(' ')[0] : 'Visitante' }}!</h1> 
-  <p-button label="Cadastrar"></p-button>
-</div> -->
+<!-- Boas vindas -->
+<div class="card flex justify-content-center align-items-center">
+  <h3 class="px-4">Bem-vindo, {{ loggedUser.nome ? loggedUser.nome.split(' ')[0] : 'Visitante' }}!</h3>
+</div>
 
-<div class="card flex justify-content-center align-items-start">
+<!-- Open Modal -->
+<div class="card flex justify-content-center align-items-start py-8">
   <p-button (click)="showDialog()" label="Adicinar atividade"></p-button>
+</div>
+
+<!-- Cards -->
+<app-cards [item]="atividades"></app-cards>
+
+<!-- Modal -->
+<div class="card flex justify-content-center align-items-start">
   <p-dialog header="Nova atividade" [(visible)]="visible" [modal]="true" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
       
         <form name="atividadeForm" class="flex-row">
@@ -26,7 +34,7 @@
           </div>
 
           <div class="card flex justify-content-center py-5">
-            <p-button type="submit" (click)="onRegister()" size="small">Registrar</p-button>
+            <p-button type="button" (click)="onRegister()" size="small">Registrar</p-button>
           </div>
                  
         </form>
