@@ -109,6 +109,16 @@ Os exercícios desta semana estão voltados para os conceitos de: **Módulos**, 
 
 - Inclua a validação de campos obrigatórios (required), juntamente com as labels para feedback visual em cada input no componente **profile**. :heavy_check_mark:
 
+### [📌 Home - Part 1](https://trello.com/c/UrS1gyrk) | source code: [`M1S11-Ex5`](https://github.com/vb-ferreira/fmt-keep-health/commit/611c579da2888822b9e3d9b1167ddef7f0b53c40)
+
+- Crie um botão "‘"Adicionar atividade" que, ao clicado, abrirá um dialog do PrimeNG. :heavy_check_mark:
+
+- Salve os dados do formulário na `localStorage`. :heavy_check_mark:
+
+### [📌 Home - Part 2](https://trello.com/c/NcVZ6mxS) | source code: [`M1S11-Ex6`](https://github.com/vb-ferreira/fmt-keep-health/commit/e7bebabd3b15df635fab7939671fcbcfd3f40d3d)
+
+- Crie um card que irá representar as atividades realizadas. :heavy_check_mark:
+
 # [M1S12] Keep Health App (continuação)
 
 Guardas de rota, otimização, build e deploy.
